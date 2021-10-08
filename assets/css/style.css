@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;600;700&family=Roboto:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;600;700&family=Roboto:ital,wght@1,300&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
+  cursor: default;
 }
 
 :root {
   --white: #ffffff;
 
-  --gray-10: #FDFDFD;
-  --gray-50: #F5F5F5;
-  --gray-90: #ECECEC;
-  --gray-100: #E9E9E9;
-  --gray-110: #DCDCDC;
-  --gray-150: #C9C9C9;
-  --gray-250: #BFBFBF;
+  --gray-10: #fdfdfd;
+  --gray-50: #f5f5f5;
+  --gray-90: #ececec;
+  --gray-100: #e9e9e9;
+  --gray-110: #dcdcdc;
+  --gray-150: #c9c9c9;
+  --gray-250: #bfbfbf;
   --gray-400: #414141;
   --gray-810: #282828;
 
-
-  --cyan-700: #0F8D95;
+  --cyan-700: #0f8d95;
 }
 
 @media (max-width: 1080px) {
@@ -41,7 +41,11 @@ body {
   color: var(--gray-810);
 }
 
-body, input, textarea, select, button {
+body,
+input,
+textarea,
+select,
+button {
   font: 400 1rem "JetBrains Mono", monospace;
 }
 
@@ -52,15 +56,35 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+}
+
+a img {
+  cursor: pointer;
+}
+
+ul{
+  margin-left: 26px;
 }
 
 /* Início dos estilos */
-.top-bar{
+.top-bar {
   width: 100%;
   height: 2rem;
   background: var(--gray-110);
   border-bottom: 1px solid var(--gray-250);
   margin-bottom: 2rem;
+}
+
+.footer-bar {
+  width: 100%;
+  height: 4rem;
+  background: var(--gray-110);
+  border-top: 1px solid var(--gray-250);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  box-shadow: 0px -8px 20px 0px #00000014;
 }
 
 .wrapper {
@@ -78,6 +102,26 @@ a {
   box-shadow: 0px 6px 13px 3px #00000012;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.link-custom {
+  color: var(--cyan-700);
+  box-shadow: inset 0px -1px 0px 0px var(--cyan-700);
+}
+
+.link-custom:hover {
+  box-shadow: inset 0px -4px 0px 0px var(--cyan-700);
+}
+
 /* Tag Base styles */
 .tag {
   width: fit-content;
@@ -88,6 +132,7 @@ a {
   padding: 0 0.7rem;
   display: flex;
   align-items: center;
+  cursor: default;
 }
 
 .tag .tag-icon {
@@ -104,7 +149,7 @@ a {
 }
 
 .tag .tag-name {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Top Card styles */
@@ -114,45 +159,84 @@ a {
   position: relative;
 }
 
-.about-card .top-infos .bg-name{
+.about-card .top-infos .bg-name {
   background: var(--gray-100);
-  padding: 1rem 1rem;
-  width: 90%; /* width 90% para tirar detalhe do canto superior direito da imagem */
+  padding: 1rem 1.7rem;
+  width: calc(100% - 30px)
+    /* width 90% para tirar detalhe do canto superior direito da imagem */;
 }
 
-.about-card .top-infos .bg-name p{
-  font-size: 1.5rem;
+.about-card .top-infos .bg-name p {
+  font-size: 2rem;
   font-weight: 700;
 }
 
-.about-card .top-infos .bg-occupation{
+.about-card .top-infos .bg-occupation {
   background: var(--gray-110);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.7rem;
   font-weight: 500;
 }
 
-.about-card .top-infos .bg-occupation p{
+.about-card .top-infos .bg-occupation p {
   font-size: 1rem;
 }
 
-.about-card .top-infos .avatar{
+.about-card .top-infos .avatar {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.about-card .top-infos .avatar img{
+.about-card .top-infos .avatar img {
   width: 14rem;
   border-radius: 0.5rem 1.2rem 1.2rem 1.2rem;
 
   background-color: #104d52;
 }
 
-
 .about-card .top-infos .tags {
   width: 70%;
-  padding: 2rem 1rem;
+  padding: 2rem 0rem 2rem 1.7rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem;
+}
+
+.about-card .top-infos .contact-badges {
+  padding: 0rem 1.7rem;
+}
+
+.about-card .top-infos .about-content {
+  margin: 2rem 0rem 3rem 1.7rem;
+  font-size: 1.2rem;
+}
+
+.about-card .top-infos .about-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0.5rem 3rem 1.7rem;
+}
+
+/* Section divider */
+.divider{
+  width: 100%;
+  background: var(--gray-110);
+  margin: 2rem 0rem;
+  padding: 1rem;
+  border: 1px solid var(--gray-150);
+  border-radius: 1rem;
+  text-align: center
+}
+
+.divider p{
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* Project Wrapper */
+
+.project-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
 }
