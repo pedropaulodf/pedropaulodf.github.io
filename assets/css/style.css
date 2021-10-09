@@ -445,7 +445,7 @@ iframe {
 
 @media (max-width: 400px) {
   .wrapper {
-    padding: 0.7rem ​0.7rem;
+    padding: 0.7rem 0.7rem;
   }
   .project-wrapper .project-card .preview-image {
     width: inherit;
