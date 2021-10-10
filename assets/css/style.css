@@ -382,6 +382,7 @@ iframe {
 
 .project-wrapper .about-project-card .project-description {
   padding: 1rem 1.7rem 3rem 1.7rem;
+  font-weight: 300;
 }
 
 .project-wrapper .about-project-card .bottom-access-icons {
