@@ -19,6 +19,7 @@
   --gray-110: #dcdcdc;
   --gray-150: #c9c9c9;
   --gray-250: #bfbfbf;
+  --grey-300: #7e7e7e;
   --gray-400: #414141;
   --gray-810: #282828;
 
@@ -325,7 +326,7 @@ iframe {
   position: absolute;
   right: 0;
   bottom: 0;
-  background: var(--gray-150);
+  background: var(--gray-300);
   padding: 0.4rem 1.5rem 0.1rem 2rem;
   border-radius: 3rem 0rem 0.9rem 0rem;
   display: flex;
@@ -389,7 +390,7 @@ iframe {
   position: absolute;
   right: 0;
   bottom: 0;
-  background: var(--gray-150);
+  background: var(--gray-300);
   padding: 0.4rem 1.5rem 0.1rem 2rem;
   border-radius: 3rem 0rem 1.4rem 0rem;
   display: flex;
