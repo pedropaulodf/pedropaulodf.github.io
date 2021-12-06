@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <div class="top-bar"></div>
   <div class="wrapper">
 
@@ -27,8 +28,11 @@
             Dev Front-end React/React Native
           </p>
         </div>
-        <div class="avatar">
-          <img src="/assets/img/foto.webp" alt="Photo of Pedro Paulo">
+        <div class="avatar-fundo" style="transform-style: preserve-3d" data-tilt>
+          <img src="/assets/img/fundo.png" alt="Photo background">
+          <div class="avatar-photo" style="transform: translateZ(0px)">
+            <img src="/assets/img/eu.png" alt="Photo of Pedro Paulo">
+          </div>
         </div>
         <div class="tags">
           <div class="tag">
@@ -581,6 +585,8 @@
     <p>© 2021 // Pedro Paulo // pedropaulo.dev</p>
   </div>
 
+  <script src="/assets/js/jquery.slim.min.js"></script>
+  <script src="/assets/js/tilt.jquery.min.js"></script>
 </body>
 
 </html>

@@ -203,8 +203,9 @@ iframe {
 .about-card .top-infos .bg-name {
   background: var(--grey-100);
   padding: 1rem 1.7rem;
-  width: calc(100% - 30px)
-    /* width 90% para tirar detalhe do canto superior direito da imagem */;
+  /* width 90% para tirar detalhe do canto superior direito da imagem */
+  /* width: calc(100% - 30px);  */
+  border-radius: 0 20px 0 0;
 }
 
 .about-card .top-infos .bg-name p {
@@ -222,16 +223,26 @@ iframe {
   font-size: 1rem;
 }
 
-.about-card .top-infos .avatar {
+.about-card .top-infos .avatar-fundo {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.about-card .top-infos .avatar img {
+.about-card .top-infos .avatar-fundo img {
   width: 14rem;
   border-radius: 0.5rem 1.2rem 1.2rem 1.2rem;
-  background-color: #414141;
+}
+
+.about-card .top-infos .avatar-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.about-card .top-infos .avatar-photo img {
+  width: 14rem;
+  border-radius: 0.5rem 1.2rem 1.2rem 1.2rem;
 }
 
 .about-card .top-infos .tags {
@@ -436,7 +447,7 @@ iframe {
   .about-card .top-infos .bg-occupation p {
     width: calc(100% - 120px);
   }
-  .about-card .top-infos .avatar img {
+  .about-card .top-infos .avatar-fundo img {
     width: 9rem;
   }
   .about-card .top-infos .tags {
