@@ -108,6 +108,10 @@ span.mensagem-copiado {
   font-size: 0.8rem;
   opacity: 0;
   transition: all 0.5s ease;
+  z-index: 10;
+  background: #ffffffd1;
+  border-radius: 3px;
+  padding: 2px 4px;
 }
 
 /* Início dos estilos */
