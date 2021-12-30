@@ -10,5 +10,7 @@ function copiarTexto(value) {
 }
 
 $('.js-tilt').tilt({
-  scale: 1.2
+  scale: 1.11,
+  glare: true,
+  maxGlare: .5
 })
