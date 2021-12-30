@@ -8,3 +8,7 @@ function copiarTexto(value) {
     spanMessageCopiadoEmail.style.opacity = 0;
   }, durationVisible);
 }
+
+$('.js-tilt').tilt({
+  scale: 1.2
+})
