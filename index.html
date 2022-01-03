@@ -29,9 +29,19 @@
               Dev Jr Front-end React/React Native
             </p>
           </div>
-          <div class="avatar-fundo js-tilt" style="transform-style: preserve-3d" data-tilt>
+          <div
+          class="avatar-fundo your-element"
+          style="transform: perspective(1000px);transform-style: preserve-3d;"
+          data-tilt
+          data-tilt-startX="5"
+          data-tilt-startY="-0"
+          data-tilt-scale="1.06"
+          data-tilt-glare data-tilt-max-glare="0.8"
+          data-tilt-full-page-listening
+          data-tilt-reverse="true"
+          >
             <img src="/assets/img/fundo.png" alt="Photo background">
-            <div class="avatar-photo" style="transform: translateZ(0px)">
+            <div class="avatar-photo" style="transform: translateZ(10px)">
               <img src="/assets/img/eu.png" alt="Photo of Pedro Paulo">
             </div>
           </div>
@@ -804,8 +814,11 @@
   </div>
 
   <script src="/assets/js/jquery.slim.min.js"></script>
-  <script src="/assets/js/tilt.jquery.min.js"></script>
+  <!-- <script src="/assets/js/tilt.jquery.min.js"></script> -->
+  <script type="text/javascript" src="/assets/js/vanilla-tilt.min.js"></script>
   <script defer src="/assets/js/scripts.js"></script>
+
+  
 </body>
 
 </html>

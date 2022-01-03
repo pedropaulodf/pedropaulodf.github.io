@@ -9,8 +9,16 @@ function copiarTexto(value) {
   }, durationVisible);
 }
 
-$('.js-tilt').tilt({
-  scale: 1.11,
-  glare: true,
-  maxGlare: .5
-})
+// $('.js-tilt').tilt({
+//   scale: 1.11,
+//   glare: true,
+//   maxGlare: .5
+// });
+
+	VanillaTilt.init(document.querySelector(".your-element"), {
+		max: 25,
+		speed: 400,
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".your-element"));
