@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;600;700&family=Roboto:ital,wght@1,300&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: "JetBrains Mono", monospace;
   cursor: default;
@@ -10,7 +9,6 @@
 
 :root {
   --white: #ffffff;
-
   --grey-10: #fdfdfd;
   --grey-50: #f5f5f5;
   --grey-90: #ececec;
@@ -22,7 +20,6 @@
   --grey-300: #7e7e7e;
   --grey-400: #414141;
   --grey-810: #282828;
-
   --cyan-700: #0f8d95;
 }
 
@@ -89,32 +86,32 @@ iframe {
   width: 14px;
   height: 0px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgb(219, 219, 219);
   border-radius: 10px;
   border: 2px solid rgb(241, 241, 241);
 }
+
 ::-webkit-scrollbar-track {
   background: rgb(241, 241, 241);
   border-radius: 10px;
   border: 1px solid rgb(241, 241, 241);
 }
 
-/* Diversos */
 span.mensagem-copiado {
   position: absolute;
-  left: 0;
+  left: 0px;
   bottom: -14px;
   font-size: 0.8rem;
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease 0s;
   z-index: 10;
-  background: #ffffffd1;
+  background: rgba(255, 255, 255, 0.82);
   border-radius: 3px;
   padding: 2px 4px;
 }
 
-/* Início dos estilos */
 .top-bar {
   width: 100%;
   height: 2rem;
@@ -130,20 +127,41 @@ span.mensagem-copiado {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px -8px 20px 0px #00000014;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px -8px 20px 0px;
   text-align: center;
 }
 
 .wrapper {
   width: 100%;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 2rem 2rem;
+  margin: 0px auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  gap: 2rem;
+}
+
+.wrapper .about-columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .fill-blank-space {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: -webkit-fill-available;
+}
+
+.wrapper .fill-blank-space p{
+  width: 60%;
+  text-align: center;
 }
 
 .access-github {
   text-align: center;
-  padding: 0rem 1.5rem 3rem 1.5rem;
+  padding: 0rem 1.5rem 3rem;
 }
 
 .access-github p {
@@ -155,7 +173,7 @@ span.mensagem-copiado {
   border: 1px solid var(--grey-150);
   border-radius: 1rem;
   background: var(--grey-10);
-  box-shadow: 0px 6px 13px 3px #00000012;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 6px 13px 3px;
 }
 
 .title {
@@ -178,14 +196,13 @@ span.mensagem-copiado {
   box-shadow: inset 0px -4px 0px 0px var(--cyan-700);
 }
 
-/* Tag Base styles */
 .tag {
   width: fit-content;
   height: 1.8rem;
   background: var(--grey-90);
   border: 1px solid var(--grey-110);
   border-radius: 5rem;
-  padding: 0 0.7rem;
+  padding: 0px 0.7rem;
   display: flex;
   align-items: center;
   cursor: default;
@@ -193,7 +210,7 @@ span.mensagem-copiado {
 
 .tag .tag-icon {
   height: 1.8rem;
-  margin: 0 0.5rem 0 -0.7rem;
+  margin: 0px 0.5rem 0px -0.7rem;
   background: var(--grey-400);
   padding: 0.4rem;
   border-radius: 5rem;
@@ -205,22 +222,22 @@ span.mensagem-copiado {
 }
 
 .tag .tag-name {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
-/* Top Card styles */
+.about-card {
+  height: fit-content;
+}
 
 .about-card .top-infos {
-  margin: 2rem 2rem 2rem 0;
+  margin: 2rem 2rem 2rem 0px;
   position: relative;
 }
 
 .about-card .top-infos .bg-name {
   background: var(--grey-100);
   padding: 1rem 1.7rem;
-  /* width 90% para tirar detalhe do canto superior direito da imagem */
-  /* width: calc(100% - 30px);  */
-  border-radius: 0 20px 0 0;
+  border-radius: 0px 20px 0px 0px;
 }
 
 .about-card .top-infos .bg-name p {
@@ -240,24 +257,24 @@ span.mensagem-copiado {
 
 .about-card .top-infos .avatar-fundo {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
 }
 
 .about-card .top-infos .avatar-fundo img {
   width: 14rem;
-  border-radius: 0.5rem 1.2rem 1.2rem 1.2rem;
+  border-radius: 0.5rem 1.2rem 1.2rem;
 }
 
 .about-card .top-infos .avatar-photo {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
 }
 
 .about-card .top-infos .avatar-photo img {
   width: 14rem;
-  border-radius: 0.5rem 1.2rem 1.2rem 1.2rem;
+  border-radius: 0.5rem 1.2rem 1.2rem;
 }
 
 .about-card .top-infos .tags {
@@ -283,24 +300,21 @@ span.mensagem-copiado {
   margin: 2rem 0.5rem 3rem 1.7rem;
 }
 
-/* Section divider */
 .divider {
   width: 100%;
   background: var(--grey-110);
-  margin: 2rem 0rem;
+  margin: 0px;
   padding: 1rem;
   border: 1px solid var(--grey-150);
   border-radius: 1rem;
   text-align: center;
-  box-shadow: 0px 6px 13px 3px #00000012;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 6px 13px 3px;
 }
 
 .divider p {
   font-size: 1.7rem;
   font-weight: 700;
 }
-
-/* Project Wrapper */
 
 .project-wrapper {
   display: grid;
@@ -309,8 +323,6 @@ span.mensagem-copiado {
   margin: 2rem 0rem;
   min-height: 580px;
 }
-
-/* Project Card styles */
 
 .project-wrapper .project-card {
   position: relative;
@@ -322,16 +334,16 @@ span.mensagem-copiado {
 .project-wrapper .access-site-button {
   border: none;
   backdrop-filter: blur(4px);
-  background: rgba(222, 222, 222, 0.8);
+  background: #b9b9b9bf;
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem;
   border-radius: 0rem 0rem 1rem 1rem;
-  transition: background 0.2s;
+  transition: background 0.2s ease 0s;
 }
 
 .project-wrapper .access-site-button:hover {
@@ -349,11 +361,11 @@ span.mensagem-copiado {
 
 .project-wrapper .project-card .bottom-icon {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 0px;
+  bottom: 0px;
   background: var(--grey-300);
   padding: 0.4rem 1.5rem 0.1rem 2rem;
-  border-radius: 3rem 0rem 0.9rem 0rem;
+  border-radius: 3rem 0rem 0.9rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -376,7 +388,7 @@ span.mensagem-copiado {
 .project-wrapper .about-project-card .year-top {
   background: var(--grey-90);
   width: 40%;
-  margin: 0 auto;
+  margin: 0px auto;
   text-align: center;
   padding: 0.2rem;
   border-radius: 0rem 0rem 2rem 2rem;
@@ -407,17 +419,17 @@ span.mensagem-copiado {
 }
 
 .project-wrapper .about-project-card .project-description {
-  padding: 1rem 1.7rem 3rem 1.7rem;
+  padding: 1rem 1.7rem 3rem;
   font-weight: 300;
 }
 
 .project-wrapper .about-project-card .bottom-access-icons {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 0px;
+  bottom: 0px;
   background: var(--grey-300);
   padding: 0.4rem 1.5rem 0.1rem 2rem;
-  border-radius: 3rem 0rem 1.4rem 0rem;
+  border-radius: 3rem 0rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -433,11 +445,10 @@ span.mensagem-copiado {
   height: 14px;
 }
 
-/* Media queries */
-
-@media (max-width: 720px) {
-  .top-bar {
-    margin-bottom: 0rem;
+@media (max-width: 1430px) {
+  .wrapper {
+    /* max-width: 960px; */
+    grid-template-columns: 1.5fr 1fr;
   }
   .project-wrapper {
     display: grid;
@@ -447,24 +458,63 @@ span.mensagem-copiado {
     width: fit-content;
   }
   .project-wrapper .project-card {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .wrapper {
+    max-width: 960px;
+    grid-template-columns: 1fr;
+  }
+  .wrapper .fill-blank-space {
+    display: none;
+  }
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .top-bar {
+    margin-bottom: 0rem;
+  }
+
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .project-wrapper .project-card .preview-image {
+    width: fit-content;
+  }
+
+  .project-wrapper .project-card {
     min-height: 400px;
   }
+
   .about-card .top-infos .about-bottom-content {
     flex-direction: column;
     gap: 3rem;
   }
+
   .about-card .top-infos .bg-name p {
     width: calc(100% - 90px);
   }
+
   .about-card .top-infos .bg-occupation {
-    border-radius: 0rem 0rem 1rem 0rem;
+    border-radius: 0rem 0rem 1rem;
   }
+
   .about-card .top-infos .bg-occupation p {
     width: calc(100% - 120px);
   }
+
   .about-card .top-infos .avatar-fundo img {
     width: 9rem;
   }
+
   .about-card .top-infos .tags {
     width: 100%;
   }
@@ -472,8 +522,9 @@ span.mensagem-copiado {
 
 @media (max-width: 400px) {
   .wrapper {
-    padding: 0.7rem 0.7rem;
+    padding: 0.7rem;
   }
+
   .project-wrapper .project-card .preview-image {
     width: inherit;
   }
