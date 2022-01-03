@@ -448,7 +448,7 @@ span.mensagem-copiado {
 @media (max-width: 1430px) {
   .wrapper {
     /* max-width: 960px; */
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
   }
   .project-wrapper {
     display: grid;
