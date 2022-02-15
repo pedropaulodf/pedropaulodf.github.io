@@ -132,11 +132,12 @@ span.mensagem-copiado {
 }
 
 .wrapper {
+  max-width: 960px;
   width: 100%;
   margin: 0px auto;
   padding: 2rem;
   display: grid;
-  grid-template-columns: 0.9fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
@@ -447,8 +448,8 @@ span.mensagem-copiado {
 
 @media (max-width: 1430px) {
   .wrapper {
-    /* max-width: 960px; */
-    grid-template-columns: 1.3fr 1fr;
+    max-width: 960px;
+    grid-template-columns: 1fr;
   }
   .project-wrapper {
     display: grid;
@@ -472,7 +473,7 @@ span.mensagem-copiado {
   }
   .project-wrapper {
     display: grid;
-    grid-template-columns: 1.3fr 2fr;
+    grid-template-columns: 1fr;
   }
 }
 
