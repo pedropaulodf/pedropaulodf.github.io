@@ -453,7 +453,7 @@ span.mensagem-copiado {
   }
   .project-wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1.3fr;
   }
   .project-wrapper .project-card .preview-image {
     width: fit-content;
@@ -473,7 +473,7 @@ span.mensagem-copiado {
   }
   .project-wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1.3fr;
   }
 }
 
