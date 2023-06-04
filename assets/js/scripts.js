@@ -16,3 +16,9 @@ VanillaTilt.init(document.querySelector(".your-element"), {
 
 //It also supports NodeList
 VanillaTilt.init(document.querySelectorAll(".your-element"));
+
+function setAnoFooter(variable) {
+  var s = document.getElementById(variable);
+  s.value = new Date().getFullYear();
+}
+setAnoFooter("footerAno");
