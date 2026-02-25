@@ -317,6 +317,13 @@ span.mensagem-copiado {
   font-weight: 700;
 }
 
+.projects-overview-card {
+  margin: 2rem 0rem;
+  padding: 1.8rem 1.7rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
 .project-wrapper {
   display: grid;
   grid-template-columns: 1.3fr 2fr;
